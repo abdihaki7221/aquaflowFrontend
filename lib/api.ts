@@ -1,6 +1,6 @@
 // AquaFlow Backend API Client
 // Configure the base URL to point to your backend
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://aquaflow-service-production-9f01.up.railway.app';
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${API_BASE}${path}`, {
@@ -122,14 +122,14 @@ export const metersApi = {
 // STK Push
 export const stkApi = {
   initiate: (meterNumber: string, phone: string, amount: number, description?: string) =>
-    request<ApiResponse<StkPushResponse>>('/api/v1/mpesa/stk/push', {
+    request<ApiResponse<StkPushResponse>>('/api/v1/push', {
       method: 'POST',
       body: JSON.stringify({ meterNumber, phone, amount, description }),
     }),
   getStatus: (checkoutRequestId: string) =>
-    request<ApiResponse<StkPushResponse>>(`/api/v1/mpesa/stk/status/${checkoutRequestId}`),
+    request<ApiResponse<StkPushResponse>>(`/api/v1/status/${checkoutRequestId}`),
   getByMeter: (meterNumber: string) =>
-    request<ApiResponse<StkPushResponse[]>>(`/api/v1/mpesa/stk/meter/${meterNumber}`),
+    request<ApiResponse<StkPushResponse[]>>(`/api/v1/meter/${meterNumber}`),
 };
 
 // Transactions
