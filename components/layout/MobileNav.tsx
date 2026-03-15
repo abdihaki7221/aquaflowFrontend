@@ -33,6 +33,7 @@ export default function MobileNav({ role }: MobileNavProps) {
       { icon: LayoutDashboard, label: 'Home', href: '/dashboard/staff' },
       { icon: Users, label: 'Tenants', href: '/dashboard/staff/tenants' },
       { icon: Gauge, label: 'Meters', href: '/dashboard/staff/meters' },
+      { icon: CreditCard, label: 'Payments', href: '/dashboard/staff/transactions' },
       { icon: Settings, label: 'Settings', href: '/dashboard/staff/settings' },
     ],
     tenant: [

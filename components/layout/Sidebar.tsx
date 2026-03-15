@@ -76,6 +76,7 @@ export default function Sidebar({ role }: SidebarProps) {
       { icon: LayoutDashboard, label: 'Dashboard', href: '/dashboard/staff' },
       { icon: Users, label: 'Tenants', href: '/dashboard/staff/tenants' },
       { icon: Gauge, label: 'Meter Readings', href: '/dashboard/staff/meters' },
+      { icon: CreditCard, label: 'Transactions', href: '/dashboard/staff/transactions' },
       { icon: Settings, label: 'Settings', href: '/dashboard/staff/settings' },
     ],
     tenant: [
