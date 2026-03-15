@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/dashboard/staff/meters/page": "app/dashboard/staff/meters/page.js",
+  "/dashboard/staff/settings/page": "app/dashboard/staff/settings/page.js",
+  "/dashboard/tenant/billing/page": "app/dashboard/tenant/billing/page.js",
+  "/dashboard/tenant/page": "app/dashboard/tenant/page.js"
+}
