@@ -232,7 +232,7 @@ export default function LandingPage() {
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-50 border border-sky-100 text-sky-700 text-sm font-medium mb-6">
                 <MapPin className="w-4 h-4" />
-                Serving Westlands, Nairobi & beyond
+                Serving Eldoret & beyond
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
@@ -350,7 +350,7 @@ export default function LandingPage() {
             <div>
               <p className="text-sky-600 font-semibold text-sm uppercase tracking-wider mb-3">About AquaFlow</p>
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
-                Nairobi&apos;s most trusted water service provider
+                Eldoret&apos;s most trusted water service provider
               </h2>
               <p className="text-slate-600 leading-relaxed mb-6">
                 Founded in 2018 and headquartered in Westlands, AquaFlow has grown from serving a single estate to supplying clean, reliable water to over 2,400 households across Nairobi. We combine smart metering technology with transparent, tiered billing to ensure every customer pays fairly for exactly what they use.
